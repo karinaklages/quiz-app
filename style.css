@@ -6,9 +6,13 @@ body {
     background-image: linear-gradient(to top, #f3daff 0%, #00e3ae 100%);
 }
 
-h1, h5, p {
+h1, h5 {
     text-align: center;
     color: #fff;
+}
+
+p {
+    color: #5A8F89;
 }
 
 a {
@@ -39,6 +43,7 @@ a {
     border-style: none;
     border-radius: 12px;
     background-color: rgba(255, 255, 255, 0.3);
+    width: 30rem;
 }
 
 .answer {
@@ -66,8 +71,8 @@ a {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 120px;
-    height: 36px;
+    width: 160px;
+    height: 38px;
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -75,4 +80,18 @@ a {
 .btn-custom:hover {
     background-color: #4b7d77;
     color: #fff;
+}
+
+.text-line {
+    margin-left: 6px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer p {
+  margin: 0;
 }
