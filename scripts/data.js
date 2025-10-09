@@ -5,7 +5,7 @@ const questions = [
         "answer_2": "Eiche",
         "answer_3": "Fichte",
         "answer_4": "Kiefer",
-        "right_answer": "Fichte",
+        "right_answer": "3",
     },
     {
         "question": "Wie nennt man eine Gruppe von Wölfen?",
@@ -13,7 +13,7 @@ const questions = [
         "answer_2": "Herde",
         "answer_3": "Schwarm",
         "answer_4": "Kolonie",
-        "right_answer": "Rudel",
+        "right_answer": "1",
     },
     {
         "question": "Welches Tier hält keinen Winterschlaf?",
@@ -21,7 +21,7 @@ const questions = [
         "answer_2": "Eichhörnchen",
         "answer_3": "Dachs",
         "answer_4": "Fledermaus",
-        "right_answer": "Eichhörnchen",
+        "right_answer": "2",
     },
     {
         "question": "Welches Tier ist das größte lebende Säugetier der Erde?",
@@ -29,7 +29,7 @@ const questions = [
         "answer_2": "Blauwal",
         "answer_3": "Pottwal",
         "answer_4": "Giraffe",
-        "right_answer": "Blauwal",
+        "right_answer": "2",
     },
     {
         "question": "Wie nennt man den Punkt, an dem ein Stern explodiert?",
@@ -37,7 +37,7 @@ const questions = [
         "answer_2": "Meteor",
         "answer_3": "Quasar",
         "answer_4": "Asteroid",
-        "right_answer": "Supernova",
+        "right_answer": "1",
     },
     {
         "question": "Welcher Planet ist der Sonne am nächsten?",
@@ -45,6 +45,6 @@ const questions = [
         "answer_2": "Merkur",
         "answer_3": "Mars",
         "answer_4": "Erde",
-        "right_answer": "Merkur",
+        "right_answer": "2",
     }
 ];
