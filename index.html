@@ -15,7 +15,7 @@
     <div class="space"></div>
     <div class="container">
         <div class="card">
-            <div class="card-body">
+            <div class="card-body" id="quizActive">
                 <h5 class="card-title" id="questionText">Frage</h5>
                 <div class="mb-3">
                     <div class="answer" id="answer_1" onclick="answer('answer_1')">
@@ -39,12 +39,19 @@
                 </div>
                 <div class="footer">
                     <span class="text-line">
-                        <p><b>1</b> von <b id="allQuestions">5</b> Fragen</p>
+                        <p><b id="counter">1</b> von <b id="allQuestions"></b> Fragen</p>
                     </span>
                     <div>
                         <button onclick="nextQuestion()" class="btn-custom" id="nextButton" disabled>Nächste Frage</button>
                     </div>
                 </div>
+            </div>
+            <div class="card-body" id="quizCompleted" style="display: none;">
+                <h5 class="card-title">Glückwunsch, das Quiz ist beendet!</h5>
+                <img class="quiz-completed" src="./assets/icons/quiz-completed.png" alt="Party Icon" height="60px">
+                <span class="text-line">
+                    <p>Du hast <b id="counter">1</b> von <b id="allQuestions">10</b> Fragen richtig beantwortet.</p>
+                </span>
             </div>
         </div>
     </div>

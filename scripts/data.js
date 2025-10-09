@@ -33,11 +33,11 @@ const questions = [
     },
     {
         "question": "Wie nennt man den Punkt, an dem ein Stern explodiert?",
-        "answer_1": "Supernova",
+        "answer_1": "Asteroid",
         "answer_2": "Meteor",
         "answer_3": "Quasar",
-        "answer_4": "Asteroid",
-        "right_answer": "1",
+        "answer_4": "Supernova",
+        "right_answer": "4",
     },
     {
         "question": "Welcher Planet ist der Sonne am nächsten?",
@@ -45,6 +45,38 @@ const questions = [
         "answer_2": "Merkur",
         "answer_3": "Mars",
         "answer_4": "Erde",
+        "right_answer": "2",
+    },
+    {
+        "question": "Wie nennt man Wälder, die dauerhaft nass und artenreich sind?",
+        "answer_1": "Regenwälder",
+        "answer_2": "Nadelwälder",
+        "answer_3": "Laubwälder",
+        "answer_4": "Mangrovenwälder",
+        "right_answer": "1",
+    },
+    {
+        "question": "Welches Tier baut Dämme aus Ästen und Holz?",
+        "answer_1": "Dachs",
+        "answer_2": "Otter",
+        "answer_3": "Biber",
+        "answer_4": "Waschbär",
+        "right_answer": "3",
+    },
+    {
+        "question": "Welches Tier kann rückwärts fliegen?",
+        "answer_1": "Kolibri",
+        "answer_2": "Fledermaus",
+        "answer_3": "Schwalbe",
+        "answer_4": "Libelle",
+        "right_answer": "1",
+    },
+    {
+        "question": "Wie heißt der größte Kontinent der Erde?",
+        "answer_1": "Afrika",
+        "answer_2": "Asien",
+        "answer_3": "Europa",
+        "answer_4": "Nordamerika",
         "right_answer": "2",
     }
 ];
