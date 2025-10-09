@@ -1,6 +1,7 @@
 // Variables
 
 let currentQuestion = 0;
+let rightQuestions = 0;
 
 
 
@@ -18,6 +19,8 @@ function showQuestion() {
     if (currentQuestion >= questions.length) {
         document.getElementById("quizCompleted").style = "";
         document.getElementById("quizActive").style = "display: none";
+        document.getElementById("finalQuestions").innerHTML = questions.length;
+        document.getElementById("counterRightQuestions").innerHTML = rightQuestions;
     } else {
         let question = questions[currentQuestion];
 
@@ -38,6 +41,7 @@ function answer(selection) {
 
     if (selectedQuestionNumber == question["right_answer"]) {
         document.getElementById(selection).classList.add("right-answer");
+        rightQuestions++;
     } else {
         document.getElementById(selection).classList.add("wrong-answer");
         document.getElementById(idOfRightAnswer).classList.add("right-answer");
