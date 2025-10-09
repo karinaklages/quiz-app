@@ -24,19 +24,27 @@ const questions = [
         "right_answer": "Eichhörnchen",
     },
     {
-        "question": "Wie nennt man den Lebensraum, in dem Bäume die dominierende Pflanzenform sind?",
-        "answer_1": "Wüste",
-        "answer_2": "Savanne",
-        "answer_3": "Wald",
-        "answer_4": "Tundra",
-        "right_answer": "Wald",
-    },
-    {
         "question": "Welches Tier ist das größte lebende Säugetier der Erde?",
         "answer_1": "Afrikanischer Elefant",
         "answer_2": "Blauwal",
         "answer_3": "Pottwal",
         "answer_4": "Giraffe",
         "right_answer": "Blauwal",
+    },
+    {
+        "question": "Wie nennt man den Punkt, an dem ein Stern explodiert?",
+        "answer_1": "Supernova",
+        "answer_2": "Meteor",
+        "answer_3": "Quasar",
+        "answer_4": "Asteroid",
+        "right_answer": "Supernova",
+    },
+    {
+        "question": "Welcher Planet ist der Sonne am nächsten?",
+        "answer_1": "Venus",
+        "answer_2": "Merkur",
+        "answer_3": "Mars",
+        "answer_4": "Erde",
+        "right_answer": "Merkur",
     }
 ];

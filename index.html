@@ -10,36 +10,36 @@
 
     <title>Quiz App</title>
 </head>
-<body>
+<body onload="init()">
     <h1>Quiz App</h1>
     <div class="space"></div>
     <div class="container">
         <div class="card">
             <div class="card-body">
-                <h5 class="card-title">Frage</h5>
+                <h5 class="card-title" id="questionText">Frage</h5>
                 <div class="mb-3">
-                    <div class="answer">
+                    <div class="answer" id="answer_1" onclick="answer('answer_1')">
                         Antwort
                     </div>
                 </div>
                 <div class="mb-3">
-                    <div class="answer">
+                    <div class="answer" id="answer_2" onclick="answer('answer_2')">
                         Antwort
                     </div>
                 </div>
                 <div class="mb-3">
-                    <div class="answer">
+                    <div class="answer" id="answer_3" onclick="answer('answer_3')">
                         Antwort
                     </div>
                 </div>
                 <div class="mb-3">
-                    <div class="answer">
+                    <div class="answer" id="answer_4" onclick="answer('answer_4')">
                         Antwort
                     </div>
                 </div>
                 <div class="footer">
                     <span class="text-line">
-                        <p><b>1</b> von <b>5</b> Fragen</p>
+                        <p><b>1</b> von <b id="allQuestions">5</b> Fragen</p>
                     </span>
                     <div>
                         <a href="#" class="btn-custom">Nächste Frage</a>
@@ -48,6 +48,7 @@
             </div>
         </div>
     </div>
+    <script src="./scripts/data.js"></script>
     <script src="./script.js"></script>
 </body>
 </html>

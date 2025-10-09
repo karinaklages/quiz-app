@@ -3,16 +3,25 @@ body {
     flex-direction: column;
     justify-content: center;
     min-height: 100vh;
-    background-image: linear-gradient(to top, #f3daff 0%, #00e3ae 100%);
+    background-image: linear-gradient(to top, #e49b7a 0%, #d0d9e3 100%);
 }
 
-h1, h5 {
+h1 {
     text-align: center;
+    font-weight: 300;
     color: #fff;
 }
 
+h5 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: 300;
+    text-align: center;
+}
+
 p {
-    color: #5A8F89;
+    color: #515151;
+    font-weight: 300;
 }
 
 a {
@@ -20,7 +29,7 @@ a {
 }
 
 .space {
-    height: 36px;
+    height: 30px;
 }
 
 .container {
@@ -36,22 +45,41 @@ a {
 
 .card-title {
     margin-bottom: 2rem;
-    color: #fff;
+    color: #515151;
 }
 
 .card {
     border-style: none;
     border-radius: 12px;
-    background-color: rgba(255, 255, 255, 0.3);
-    width: 30rem;
+    background-color: rgba(255, 255, 255, 0.40);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.10);
+    width: 45rem;
 }
 
 .answer {
-    outline: 2px solid #fff;
+    outline: 1.5px solid #ffffffbe;
     border-radius: 50px;
-    background-color: rgba(255, 255, 255, 0.3);
-    color: #5A8F89;
+    color: #515151;
+    font-weight: 300;
     cursor: pointer;
+    transition: all 0.2s;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.answer:hover {
+    background-color: #ffffff40;
+}
+
+.right-answer {
+    border-radius: 50px;
+    background-color: #ff9939 !important;
+    outline: 1.5px solid #ff9939;
+    color: #fff;
     transition: all 0.2s;
     height: 55px;
     display: flex;
@@ -59,13 +87,22 @@ a {
     justify-content: center;
 }
 
-.answer:hover {
-    background-color: #ffffff75;
+.wrong-answer {
+    border-radius: 50px;
+    background-color: #fff !important;
+    outline: 1.5px solid #fff;
+    color: #515151;
+    transition: all 0.2s;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .btn-custom {
-    background-color: #5A8F89;
+    background-color: #ff9939;
     color: #fff;
+    font-weight: 300;
     border: none;
     border-radius: 50px;
     display: inline-flex;
@@ -75,15 +112,16 @@ a {
     height: 38px;
     margin-top: 20px;
     margin-bottom: 20px;
+    margin-right: 80px;
 }
 
 .btn-custom:hover {
-    background-color: #4b7d77;
+    background-color: #f89234;
     color: #fff;
 }
 
 .text-line {
-    margin-left: 6px;
+    margin-left: 80px;
 }
 
 .footer {
@@ -93,5 +131,5 @@ a {
 }
 
 .footer p {
-  margin: 0;
+    margin: 0;
 }
