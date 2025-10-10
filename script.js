@@ -2,14 +2,13 @@
 
 let currentQuestion = 0;
 let rightQuestions = 0;
-
+let sound = new Audio("./assets/audio/bamboo-flute.mp3");
 
 
 // Functions
 
 function init() {
     document.getElementById("allQuestions").innerHTML = questions.length;
-
     showQuestion()
 }
 
@@ -19,11 +18,15 @@ function showQuestion() {
     if (currentQuestion >= questions.length) {
         document.getElementById("quizCompleted").style = "";
         document.getElementById("quizActive").style = "display: none";
+        sound.play();
         document.getElementById("finalQuestions").innerHTML = questions.length;
         document.getElementById("counterRightQuestions").innerHTML = rightQuestions;
     } else {
-        let question = questions[currentQuestion];
+        let percent = Math.round((currentQuestion / questions.length) * 100)
+        document.getElementById("progress").innerHTML = `${percent} %`;
+        document.getElementById("progress").style.width = `${percent}%`;
 
+        let question = questions[currentQuestion];
         document.getElementById("counter").innerHTML = currentQuestion + 1;
         document.getElementById("questionText").innerHTML = question["question"];
         document.getElementById("answer_1").innerHTML = question["answer_1"];
@@ -68,4 +71,13 @@ function resetAnswers() {
     document.getElementById("answer_3").classList.remove("right-answer");
     document.getElementById("answer_4").classList.remove("wrong-answer");
     document.getElementById("answer_4").classList.remove("right-answer");
+}
+
+
+function newGame() {
+    document.getElementById("quizActive").style = "";
+    document.getElementById("quizCompleted").style = "display: none";
+    currentQuestion = 0;
+    rightQuestions = 0;
+    init();
 }

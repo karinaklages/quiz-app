@@ -37,6 +37,9 @@
                         Antwort
                     </div>
                 </div>
+                <div class="progress bg-bar">
+                    <div class="progress-bar" id="progress" role="progressbar" style="width: 0%;"></div>
+                </div>
                 <div class="footer">
                     <span class="text-line">
                         <p><b id="counter">1</b> von <b id="allQuestions"></b> Fragen</p>
@@ -48,10 +51,13 @@
             </div>
             <div class="card-body" id="quizCompleted" style="display: none;">
                 <h5 class="card-title">Glückwunsch, das Quiz ist beendet!</h5>
-                <img class="quiz-completed" src="./assets/icons/quiz-completed.png" alt="Party Icon" height="60px">
+                <img class="quiz-completed text-center" src="./assets/icons/quiz-completed.png" alt="Party Icon" height="60px">
                 <span class="text-line">
                     <p>Du hast <b id="counterRightQuestions">1</b> von <b id="finalQuestions">10</b> Fragen richtig beantwortet.</p>
                 </span>
+                <div>
+                    <button onclick="newGame()" class="new-btn-custom" id="newGame">Erneut spielen</button>
+                </div>
             </div>
         </div>
     </div>
