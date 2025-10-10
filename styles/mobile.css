@@ -1,0 +1,37 @@
+@media (max-width: 768px) {
+    .answer {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .progress {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .btn-custom {
+        margin-right: 40px;
+    }
+
+    .text-line {
+        margin-left: 40px;
+    }
+}
+
+@media (max-width: 427px) {
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-line {
+        margin: 0 0 10px 0;
+        text-align: center;
+    }
+
+    .btn-custom {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
