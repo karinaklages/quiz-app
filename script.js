@@ -16,24 +16,38 @@ function init() {
 function showQuestion() {
 
     if (currentQuestion >= questions.length) {
-        document.getElementById("quizCompleted").style = "";
-        document.getElementById("quizActive").style = "display: none";
-        sound.play();
-        document.getElementById("finalQuestions").innerHTML = questions.length;
-        document.getElementById("counterRightQuestions").innerHTML = rightQuestions;
+        showEndscreen();
     } else {
-        let percent = Math.round((currentQuestion / questions.length) * 100)
-        document.getElementById("progress").innerHTML = `${percent} %`;
-        document.getElementById("progress").style.width = `${percent}%`;
-
-        let question = questions[currentQuestion];
-        document.getElementById("counter").innerHTML = currentQuestion + 1;
-        document.getElementById("questionText").innerHTML = question["question"];
-        document.getElementById("answer_1").innerHTML = question["answer_1"];
-        document.getElementById("answer_2").innerHTML = question["answer_2"];
-        document.getElementById("answer_3").innerHTML = question["answer_3"];
-        document.getElementById("answer_4").innerHTML = question["answer_4"];
+        updateProgressBar()
+        updateNextQuestion();
     }
+}
+
+
+function showEndscreen() {
+    document.getElementById("quizCompleted").style = "";
+    document.getElementById("quizActive").style = "display: none";
+    sound.play();
+    document.getElementById("finalQuestions").innerHTML = questions.length;
+    document.getElementById("counterRightQuestions").innerHTML = rightQuestions;
+}
+
+
+function updateProgressBar() {
+    let percent = Math.round((currentQuestion / questions.length) * 100)
+    document.getElementById("progress").innerHTML = `${percent} %`;
+    document.getElementById("progress").style.width = `${percent}%`;    
+}
+
+
+function updateNextQuestion() {
+    let question = questions[currentQuestion];
+    document.getElementById("counter").innerHTML = currentQuestion + 1;
+    document.getElementById("questionText").innerHTML = question["question"];
+    document.getElementById("answer_1").innerHTML = question["answer_1"];
+    document.getElementById("answer_2").innerHTML = question["answer_2"];
+    document.getElementById("answer_3").innerHTML = question["answer_3"];
+    document.getElementById("answer_4").innerHTML = question["answer_4"];
 }
 
 
