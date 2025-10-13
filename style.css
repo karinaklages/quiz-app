@@ -10,6 +10,7 @@ h1 {
     text-align: center;
     font-weight: 300;
     color: #fff;
+    margin-top: 40px;
 }
 
 h5 {
@@ -36,6 +37,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 40px;
 }
 
 .card-body {
